@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="page-title">CADASTRO DE DEVS</h1>
+            <p id="description" class="page-description">
+            Complete suas informações:
+        </p>
+    </header>
+    <form id="form">
+        <div class="form-dev">
+            <label id="name" for="name">Nome</label>
+            <input type="text" name="name" id="name" class="form-level" placeholder="Insira seu nome" required />
+        </div>
+        <div class="form-dev">
+            <label id="name" for="name">Sobrenome</label>
+            <input type="text" name="name" id="name" class="form-level" placeholder="Insira seu sobrenome" required />
+        </div>
+        <div class="form-dev">
+            <label id="email" for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="form-level" placeholder="Insira seu e-mail" required />
+        </div>
+        <div class="form-dev">
+            <p>Qual sua especialidade?</p>
+            <label>
+                <input name="option" value="development-area" type="radio" class="input-radio" checked />Front-end</label>
+                <label>
+                    <input name="option" value="development-area" type="radio" class="input-radio" />Back-end</label>
+                <label>
+                    <input name="option" value="development-area" type="radio" class="input-radio" />Fullstack</label>
+                </div>
+                <div class="form-dev">
+                    <p>Senioridade</p>
+                    <select id="seniority-level" name="seniorityLevel" class="form-level" required>
+                        <option disabled selected value>Selecione</option>
+                        <option value="junior-level">Júnior</option>
+                        <option value="middle-level">Pleno</option>
+                        <option value="senior-level">Sênior</option>
+                    </select>
+                </div>
+                <div class="form-dev">
+                    <p>Selecione as tecnologias que você tem conhecimento:</p>
+                    <label id="languages">
+                        <input name="html" value="language" type="checkbox" class="input-checkbox" />HTML</label>
+                        <label id="languages">
+                            <input name="css" value="language" type="checkbox" class="input-checkbox" />CSS</label>
+                    <label id="languages">
+                            <input name="javascript" value="language" type="checkbox" class="input-checkbox" />JavaScript</label>
+                    <label id="languages">
+                            <input name="php" value="language" type="checkbox" class="input-checkbox" />PHP</label>
+                    <label id="languages">
+                            <input name="c#" value="language" type="checkbox" class="input-checkbox" />C#</label>
+                    <label id="languages">
+                            <input name="java" value="language" type="checkbox" class="input-checkbox" />Java</label>
+                        </div>
+                        <div class="form-dev">
+                            <p>Conte um pouco mais sobre sua experiência:</p>
+                            <textarea id="comments" class="input-textarea" name="comment"></textarea>
+                        </div>
+                        <div class="form-dev">
+                            <button type="submit" id="submit" class="submit-button">Concluído</button>
+                        </div>
+                    </form>
+                </div>
+            </body>
+            </html>

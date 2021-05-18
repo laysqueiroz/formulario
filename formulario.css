@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+:root {
+  --color-white: #f3f3f3;
+  --light-gray: #ced4da;
+  --light-blue: #007bff80;
+  --color-darkblue-alpha: #1b1b32cc;
+  --background-gradient: linear-gradient(120deg, #281e71, #6161AB);
+  --button-gradient: linear-gradient(120deg, #281e71, #8b83c7, #281e71);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  background: var(--background-gradient);
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.page-description {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.header {
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+input, button, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.container {
+  width: 100%;
+  margin: 50px auto 0 auto;
+  max-width: 540px;
+  max-width: 720px;
+}
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 40px 10px;
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.form-dev {
+  margin: 0 auto 20px auto;
+  padding: 4px;
+}
+
+.form-level {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  background-clip: padding-box;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+}
+
+.form-level:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--light-blue);
+}
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  outline: 0;
+}
+  
+.input-textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--light-blue);
+}
+
+button {
+  border: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: var(--button-gradient);
+  background-size: 200%;
+  transition: 0.3s ease-in-out;
+  color: inherit;
+  font-size: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-position: right;
+}
+
+#languages {
+  display: inline-flex;
+  margin-right: 10px;
+  margin-top: 5px;
+}
